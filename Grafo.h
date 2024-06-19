@@ -24,6 +24,15 @@ public:
 		}
 	}
 
+	void leerDatos(int aristas) {
+		cout << "Ingrese las aristas (parejas de vertices):" << endl;
+		for (int i = 0; i < aristas; i++) {
+			int inicio, fin;
+			cin >> inicio >> fin;
+			agregarArista(inicio, fin);
+		}
+	}
+
 private:
 	int numVertices;
 	vector<vector<int>> listaAdyacencia;

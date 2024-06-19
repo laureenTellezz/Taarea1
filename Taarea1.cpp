@@ -2,16 +2,17 @@
 #include <iostream>
 
 int main() {
-    Grafo g(4);
+    int vertices, aristas;
 
-    //Ejercicio 1
-    g.agregarArista(1, 2);
-    g.agregarArista(1, 3);
-    g.agregarArista(1, 4);
-    g.agregarArista(2, 3);
-    g.agregarArista(2, 4);
-    g.agregarArista(3, 4);
+    cout << "Ingrese el numero de vertices: ";
+    cin >> vertices;
 
+    cout << "Ingrese el numero de aristas: ";
+    cin >> aristas;
+
+    Grafo g(vertices);
+
+    g.leerDatos(aristas);
     g.mostrarAdyacencias();
 
     return 0;
